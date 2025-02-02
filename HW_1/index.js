@@ -1,4 +1,3 @@
-name = prompt('Please enter your name', 'Vlad');
+firstName = prompt('Please enter your name', 'Vlad');
 console.log('name')
-
-alert('Hello,' + name! 'How are you?')
+alert('Hello,' + '' + firstName! +'' + 'How are you?');
