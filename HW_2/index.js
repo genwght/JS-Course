@@ -1,8 +1,10 @@
-firstElement = prompt('Enter your favorite animal');
-secondElement = prompt('Enter your favorite fruit');
-thirdElement = prompt('Enter your favorite film');
-let resultOfUrAnswer = [firstElement, secondElement, thirdElement]; 
-//resultOfUrAnswer = alert(`${firstElement}, ${secondElement}, ${thirdElement}`);
-console.log(firstElement.concat(' ', secondElement, ' ', thirdElement));
-console.log(secondElement.concat(' ', firstElement, ' ', thirdElement));
-console.log(thirdElement.concat(' ', firstElement, ' ', secondElement ));
+let strings = [prompt('Enter your favorite animal'), prompt('Enter your favorite fruit'), prompt('Enter your favorite film')];
+
+// Перемішуємо масив
+strings.sort(() => Math.random() - 0.5);
+
+// Об'єднуємо у рядок
+let result = strings.join(" ");
+console.log(result);
+alert(result);
+
