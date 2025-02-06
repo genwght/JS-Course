@@ -11,8 +11,7 @@
 
 
 userNumber1 = prompt('Please enter first number');
-userNumber2 = prompt('Please enter second number');
-userNumber3 = prompt('Please enter theerd number');
-userAvarege = parseInt(userNumber1) + parseInt(userNumber2) + parseInt(userNumber3) / 3;
-alert(userAvarege);
+
+// userAvarege = parseInt(userNumber1) + parseInt(userNumber2) + parseInt(userNumber3) / 3;
+// alert(userAvarege);
 
