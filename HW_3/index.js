@@ -1,3 +1,6 @@
+prompt('Please enter first number');
+
+
 // Task Description:
 //    1.    Ask the user to enter three numbers using prompt().
 //    2.    Calculate the average of these three numbers.
@@ -8,10 +11,3 @@
 //    •    Submit your work as a pull request (PR) on GitHub.
 //    •    A successfully completed assignment is an approved PR.
 // Good luck! 🚀
-
-
-userNumber1 = prompt('Please enter first number');
-
-// userAvarege = parseInt(userNumber1) + parseInt(userNumber2) + parseInt(userNumber3) / 3;
-// alert(userAvarege);
-
