@@ -26,7 +26,7 @@
 
 userBirthDate = prompt('Please enter your year of birth');
 userAge = 2025 - parseInt(userBirthDate);
-alert(`You are ${userBirthDate} years old`);
+alert(`You are ${userAge} years old`);
 
 userCity = prompt('Please enter your city');
 userFavSport = prompt('Please enter your favorite sport');
