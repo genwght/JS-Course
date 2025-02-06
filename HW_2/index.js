@@ -4,5 +4,5 @@ userFilm = prompt('Enter your favorite film');
 
 alert(`${userFilm},${userPet},${userFruit}`)
 
-userNum = promt('Please, enter five-digit number');
+userNum = prompt('Please, enter five-digit number');
 alert(userNum);
