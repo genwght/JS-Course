@@ -5,4 +5,5 @@ userFilm = prompt('Enter your favorite film');
 alert(`${userFilm},${userPet},${userFruit}`)
 
 userNum = prompt('Please, enter five-digit number');
-alert(userNum);
+useNum = userResult.split(' ');
+alert(userResult);
