@@ -25,7 +25,8 @@
 //    •    A successfully completed assignment is an approved PR.
 
 userBirthDate = prompt('Please enter your year of birth');
-userCity = prompt('Please enter your city');
-userFavSport = prompt('Please enter your favorite sport');
 userAge = 2025 - parseInt(userBirthDate);
 alert(`You are ${userBirthDate} years old`);
+
+userCity = prompt('Please enter your city');
+userFavSport = prompt('Please enter your favorite sport');
