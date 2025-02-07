@@ -14,3 +14,5 @@ switch (userInput) {
     case 'null' :
         newUserInput = 'Input was canceled.' ;
 }
+
+console.log(newUserInput);
