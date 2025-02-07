@@ -43,3 +43,14 @@ if (countriesCapitals[userCity]) {
 
 
 userFavSport = prompt('Please enter your favorite sport');
+sportChampions = {
+    'Football' : 'Cristiano Ronaldo',
+    'Baskerball' : 'Michael Jordan',
+    'Box' : 'Oleksandr Usyk'
+}
+
+if (sportChampions[userFavSport]) {
+    alert(`Cool! Do you want to become like ${sportChampions[userFavSport]} ?`)
+} else {
+    alert(`Too bad you didn't want to enter your favorite sport`);
+}
