@@ -11,17 +11,17 @@ userInput = prompt("Enter a value:");
 // }
 
 switch (userInput) {
-    case 'null' :
+    case null :
         newUserInput = 'Input was canceled.' ;
         break;
-case '""' :
-    newUserInput = 'You entered an empty string.' ;
-    break;
-case 'isNaN(+userInput)' :
-    newUserInput = 'This is not a number.' ;
-    break;
-default :
-    newUserInput = 'Valid number entered!' ;
+    case "" :
+        newUserInput = 'You entered an empty string.' ;
+        break;
+    case isNaN + userInput :
+        newUserInput = 'This is not a number.' ;
+        break;
+    default :
+        newUserInput = 'Valid number entered!' ;
 
 }
 
