@@ -29,4 +29,17 @@ userAge = 2025 - parseInt(userBirthDate);
 alert(`You are ${userAge} years old`);
 
 userCity = prompt('Please enter your city');
+countriesCapitals = ['Kyiv, London, Tallinn'];
+
+if (userCity=countriesCapitals.indexOf('Kyiv') !== -1) {
+    alert('Your city is capital of Ukraine');
+} else if (userCity = countriesCapitals.indexOf('London') !== -1) {
+    alert('Your city is capital of Great Britain');
+} else if (userCity = countriesCapitals.indexOf('Tallinn') !== -1) {
+    alert('Your city is capital of Estonia');
+} else {
+    alert(`Your city is ${userCity}`);
+}
+
+
 userFavSport = prompt('Please enter your favorite sport');
