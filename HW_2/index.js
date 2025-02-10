@@ -8,4 +8,4 @@ userNum = prompt('Please, enter five-digit number');
 userResult = userNum.replaceAll('', ' ');
 
 userNum = prompt('Please, enter five-digit number');
-userResult = userNum.split(' ');
+userResult = userNum.replaceAll('', ' ');
