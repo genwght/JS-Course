@@ -29,16 +29,14 @@ userAge = 2025 - parseInt(userBirthDate);
 alert(`You are ${userAge} years old`);
 
 userCity = prompt('Please enter your city');
- countriesCapitals = {
-    'Kyiv': 'Ukraine',
-    'London': 'Great Britain',
-    'Tallinn': 'Estonia'
-};
+value = true || 'String' || 10;
 
-if (countriesCapitals[userCity]) {
-    alert(`Your city is the capital of ${countriesCapitals[userCity]}`);
-} else {
-    alert(`Your city is ${userCity}`);
+if (userCity === 'Kyiv') {
+    alert(`${userCity} is the capital of Ukraine`);
+} else if (userCity === 'London') {
+    alert(`${userCity} is the capital of Great Britain`)
+} else if (userCity === 'Tallinn') {
+    alert(`${userCity} is the capital of Estonia`)
 }
 
 

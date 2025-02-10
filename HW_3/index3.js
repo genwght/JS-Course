@@ -17,7 +17,7 @@ switch (userInput) {
     case "" :
         newUserInput = 'You entered an empty string.' ;
         break;
-    case isNaN(userInput) :  
+    case false :  
         newUserInput = 'This is not a number.' ;
         break;
     default :
