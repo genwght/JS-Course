@@ -1,0 +1,10 @@
+userNumber1 = prompt('Please enter first number');
+userNumber2 = prompt('Please enter second number');
+additon = parseInt(userNumber1) + parseInt (userNumber2);
+console.log(additon);
+subtraction = parseInt(userNumber1) - parseInt (userNumber2);
+console.log(subtraction);
+multiplication = parseInt(userNumber1) * parseInt (userNumber2);
+console.log(multiplication);
+division = parseInt(userNumber1) / parseInt (userNumber2);
+console.log(division);
