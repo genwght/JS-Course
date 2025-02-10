@@ -28,27 +28,37 @@ userBirthDate = prompt('Please enter your year of birth');
 userAge = 2025 - parseInt(userBirthDate);
 alert(`You are ${userAge} years old`);
 
+
+
 userCity = prompt('Please enter your city');
 value = true || 'String' || 10;
 
 if (userCity === 'Kyiv') {
     alert(`${userCity} is the capital of Ukraine`);
 } else if (userCity === 'London') {
-    alert(`${userCity} is the capital of Great Britain`)
+    alert(`${userCity} is the capital of Great Britain`);
 } else if (userCity === 'Tallinn') {
-    alert(`${userCity} is the capital of Estonia`)
+    alert(`${userCity} is the capital of Estonia`);
+} else if (userCity === null) {
+    alert(`Too bad you didn't want to enter your city`);
+ } else {
+    alert(`Your city is ${userCity} that cool!`);
 }
 
 
 userFavSport = prompt('Please enter your favorite sport');
-sportChampions = {
-    'Football' : 'Cristiano Ronaldo',
-    'Baskerball' : 'Michael Jordan',
-    'Box' : 'Oleksandr Usyk'
-}
+value = true || 'String' || 10;
 
-if (sportChampions[userFavSport]) {
-    alert(`Cool! Do you want to become like ${sportChampions[userFavSport]} ?`)
-} else {
+if (userFavSport === 'Football') {
+    alert('Cool! Do you want to become like Lionel Messi?');
+} else if (userFavSport === 'Basketball') {
+    alert('Cool! Do you want to become like Michael Jordan?');
+} else if (userFavSport === 'Box') {
+    alert('Cool! Do you want to become like Oleksandr Usyk?');
+} else if (userFavSport === null) {
     alert(`Too bad you didn't want to enter your favorite sport`);
+} else {
+    alert(`Your favotire sport is ${userFavSport} that cool!`);
 }
+ 
+
