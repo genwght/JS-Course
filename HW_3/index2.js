@@ -25,9 +25,15 @@
 //    •    A successfully completed assignment is an approved PR.
 
 userBirthDate = prompt('Please enter your year of birth');
-userAge = 2025 - parseInt(userBirthDate);
-alert(`You are ${userAge} years old`);
 
+if (userBirthDate === null || userBirthDate.trim() === "") {
+    alert(`Too bad you didn't want to enter your age`);
+} else if (isNaN(userBirthDate)) {
+    alert(`Too bad you didn't want to enter your city`);
+} else {
+    userAge = 2025 - parseInt(userBirthDate);
+    alert(`You are ${userAge} years old`);
+}
 
 
 userCity = prompt('Please enter your city');
@@ -39,9 +45,9 @@ if (userCity === 'Kyiv') {
     alert(`${userCity} is the capital of Great Britain`);
 } else if (userCity === 'Tallinn') {
     alert(`${userCity} is the capital of Estonia`);
-} else if (userCity === null) {
+} else if (userCity === null || userCity.trim() === "") {
     alert(`Too bad you didn't want to enter your city`);
- } else {
+} else {
     alert(`Your city is ${userCity} that cool!`);
 }
 
@@ -55,7 +61,7 @@ if (userFavSport === 'Football') {
     alert('Cool! Do you want to become like Michael Jordan?');
 } else if (userFavSport === 'Box') {
     alert('Cool! Do you want to become like Oleksandr Usyk?');
-} else if (userFavSport === null) {
+} else if (userFavSport === null || userFavSport.trim() === "") {
     alert(`Too bad you didn't want to enter your favorite sport`);
 } else {
     alert(`Your favotire sport is ${userFavSport} that cool!`);
