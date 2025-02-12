@@ -1,5 +1,9 @@
 do {
     userEmail = prompt('Plese enter your email');
+
+    if (length.userEmail < 5) {
+        console.log('Sorry, but your email is too small')
+    }
 }
 
 
