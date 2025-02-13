@@ -9,9 +9,10 @@ do {
         document.write(<h1>@ cannot be on the start of string. </h1>);
     } else if (userEmail[userEmail.length -1] === '@') {
         document.write(<h1>@ cannot be on the end of string</h1>);
+    } else {
+        document.write(<h1>Your: userEmail[] saved!</h1>); 
     }
-}
-
+} while (userEmail.length <= 5 || userEmail.indexOf('@') === -1 || userEmail[0] === '@'|| userEmail[userEmail.length -1] === '@');
 
 
 
