@@ -13,7 +13,6 @@ do {
         document.write(`<h1>Sorry! You not enter your email.</h1>`);
     } else {
         document.write(`<h1>Your email: ${userEmail} saved!</h1>`); 
-        break;
     }
 
 } while (userEmail.length <= 5 || userEmail.indexOf('@') === -1 || userEmail[0] === '@'|| userEmail[userEmail.length -1] === '@' || userEmail === null);
