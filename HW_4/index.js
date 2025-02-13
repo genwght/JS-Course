@@ -9,10 +9,15 @@ do {
         document.write(`<h1>@ cannot be on the start of string. </h1>`);
     } else if (userEmail[userEmail.length -1] === '@') {
         document.write(`<h1>@ cannot be on the end of string</h1>`);
+    } else if (userEmail === null) {
+        document.write(`<h1>Sorry! You not enter your email.</h1>`);
+    } else if (userEmail === ' ') {
+        document.write(`<h1>You can't leave empty string!</h1>`);
     } else {
-        document.write(`<h1>Your: ${userEmail} saved!</h1>`); 
+        document.write(`<h1>Your email: ${userEmail} saved!</h1>`); 
     }
-} while (userEmail.length <= 5 || userEmail.indexOf('@') === -1 || userEmail[0] === '@'|| userEmail[userEmail.length -1] === '@');
+
+} while (userEmail.length <= 5 || userEmail.indexOf('@') === -1 || userEmail[0] === '@'|| userEmail[userEmail.length -1] === '@' || userEmail === null || userEmail === ' ');
 
 
 
