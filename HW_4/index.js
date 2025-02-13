@@ -2,15 +2,15 @@ do {
     userEmail = prompt('Please enter your email');
 
     if (userEmail.length <= 5) {
-        document.write (<h1>Sorry! Youre email is too short.</h1>);
+        document.write (`<h1>Sorry! Youre email is too short.</h1>`);
     } else if (userEmail.indexOf('@') === -1) {
-        document.write(<h1>Your email should contain '@.'</h1>);
+        document.write(`<h1>Your email should contain '@.'</h1>`);
     } else if (userEmail[0] === '@') {
-        document.write(<h1>@ cannot be on the start of string. </h1>);
+        document.write(`<h1>@ cannot be on the start of string. </h1>`);
     } else if (userEmail[userEmail.length -1] === '@') {
-        document.write(<h1>@ cannot be on the end of string</h1>);
+        document.write(`<h1>@ cannot be on the end of string</h1>`);
     } else {
-        document.write(<h1>Your: userEmail[] saved!</h1>); 
+        document.write(`<h1>Your: ${userEmail} saved!</h1>`); 
     }
 } while (userEmail.length <= 5 || userEmail.indexOf('@') === -1 || userEmail[0] === '@'|| userEmail[userEmail.length -1] === '@');
 
