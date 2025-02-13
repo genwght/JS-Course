@@ -1,10 +1,3 @@
-do {
-    userEmail = prompt('Plese enter your email');
-
-    if (length.userEmail < 5) {
-        console.log('Sorry, but your email is too small')
-    }
-}
 
 
 
@@ -30,9 +23,3 @@ do {
 // •    "Error: '@' cannot be at the end of the email."
 // •    "Error: Email must be longer than 5 characters."
 
-// 📌 Requirements:
-// •    Use loops (while or do...while) to keep asking the user until they enter a valid email.
-// •    Use conditional statements to check for errors.
-// •    Display error messages using document.write().
-// •    Submit your work as a pull request (PR) on GitHub.
-// •    A successfully completed assignment is an approved PR.
