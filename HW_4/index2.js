@@ -20,31 +20,25 @@
 // ✔️ Use loops to validate inputs.
 // ✔️ Use conditional statements to ensure correct values.
 // ✔️ Display the final result of the calculation.
-while (true) {
-    userSelectedOperation = prompt('Please enter the operation you would like to do (+, -, *, /)');
+
+do {
+    userSelectedOperation = prompt('Please enter opreation would you like to do');
 
     if (userSelectedOperation === '+') {
-        console.log('You selected to do addition');
+        console.log('You select to do addition');
         break;
     } else if (userSelectedOperation === '-') {
-        console.log('You selected to do subtraction');
-        break;
+        console.log('You select to do subtraction');
+        break; 
     } else if (userSelectedOperation === '*') {
-        console.log('You selected to do multiplication');
-        break;
+        console.log('You select to do multiplication');
+        break; 
     } else if (userSelectedOperation === '/') {
-        console.log('You selected to do division');
-        break;
+        console.log('You select to do division');
+        break; 
     } else {
-        console.log('You entered an invalid operation. Please try again.');
+        console.log('You enter invalid opration');
     }
-}
 
-
-
-
-
-
-
-
+} while (true);
 
