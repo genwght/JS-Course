@@ -58,18 +58,16 @@ for (i = 0; i < countOperation; i++) {
 } 
 
 
-userResult = [0]
-
-for (i = 1; i < parseFloat.userNumber; i++) {
+for (i = 1; i < parseInt(userNumber); i++) {
 
     if (userSelectedOperation === '+') {
-        userResult +=  userNumber[i];
+        userResult =  userNumber[i] + userNumber[i];
     } else if (userSelectedOperation === '-') {
-        userResult -= userNumber[i];
+        userResult = userNumber[i] - userNumber[i];
     } else if (userSelectedOperation === '*') {
-        userResult *= userNumber[i];
+        userResult = userNumber[i] * userNumber[i];
     } else if (userSelectedOperation === '/') {
-        userResult /= userNumber[i];
+        userResult = userNumber[i] / userNumber[i];
     }
 
 }
