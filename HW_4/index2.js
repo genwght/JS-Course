@@ -44,14 +44,34 @@ do {
 
 
 do {
-    countOperation = prompt('Please enter count of operation from 2 to 6');
+    countOperation = parseInt(prompt('Please enter count of operation from 2 to 6'));
      if (!isNaN(countOperation) && countOperation >= 2 && countOperation <= 6) {
         break;
      } else {
         console.log('Enter valid number')
      }
+
 } while (true);
+
 for (i = 0; i < countOperation; i++) {
-    userNumber = prompt('Please enter your number');
+    userNumber = prompt(`Please enter your number ${i + 1}`);
+} 
+
+
+userResult = [0]
+
+for (i = 1; i < parseFloat.userNumber; i++) {
+
+    if (userSelectedOperation === '+') {
+        userResult +=  userNumber[i];
+    } else if (userSelectedOperation === '-') {
+        userResult -= userNumber[i];
+    } else if (userSelectedOperation === '*') {
+        userResult *= userNumber[i];
+    } else if (userSelectedOperation === '/') {
+        userResult /= userNumber[i];
+    }
+
 }
 
+alert(`${userResult}`);
