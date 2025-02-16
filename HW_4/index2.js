@@ -42,3 +42,13 @@ do {
 
 } while (true);
 
+
+do {
+    countOperation = prompt('Please enter count of operation from 2 to 6');
+     if (!isNaN(countOperation) && countOperation >= 2 && countOperation <= 6) {
+        break;
+     } else {
+        console.log('Enter valid number')
+     }
+} while (true);
+
