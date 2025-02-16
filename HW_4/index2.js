@@ -51,4 +51,7 @@ do {
         console.log('Enter valid number')
      }
 } while (true);
+for (i = 0; i < countOperation; i++) {
+    userNumber = prompt('Please enter your number');
+}
 
