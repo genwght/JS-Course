@@ -54,22 +54,25 @@ do {
 } while (true);
 
 for (i = 0; i < countOperation; i++) {
-    userNumber = prompt(`Please enter your number ${i + 1}`);
-} 
+    userNumber = parseFloat(prompt(`Please enter number ${i + 1}:`));
+} while (isNaN(userNumber));
 
+userResult = [i++]
 
 for (i = 1; i < parseInt(userNumber); i++) {
-
+    
     if (userSelectedOperation === '+') {
-        userResult =  userNumber[i] + userNumber[i];
+        userResult +=  parseInt(userNumber[i]);
     } else if (userSelectedOperation === '-') {
-        userResult = userNumber[i] - userNumber[i];
+        userResult -= parseInt(userNumber[i]);
     } else if (userSelectedOperation === '*') {
-        userResult = userNumber[i] * userNumber[i];
+        userResult *= parseInt(userNumber[i]);
     } else if (userSelectedOperation === '/') {
-        userResult = userNumber[i] / userNumber[i];
+        userResult /= parseInt(userNumber[i]);
     }
-
+    
 }
 
-alert(`${userResult}`);
+
+console.log(userResult);
+alert(userResult);
