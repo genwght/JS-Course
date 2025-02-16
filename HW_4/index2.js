@@ -20,17 +20,31 @@
 // ✔️ Use loops to validate inputs.
 // ✔️ Use conditional statements to ensure correct values.
 // ✔️ Display the final result of the calculation.
-debugger;
-do {
-    userSelectedOperation = prompt('Please enter opreation would you like to do');
+while (true) {
+    userSelectedOperation = prompt('Please enter the operation you would like to do (+, -, *, /)');
 
-    if (userSelectedOperation === null) {
-        console.log('Operation not selected');
-    } else if (userSelectedOperation === isNaN) {
-        console.log('Invalid operation');
+    if (userSelectedOperation === '+') {
+        console.log('You selected to do addition');
+        break;
+    } else if (userSelectedOperation === '-') {
+        console.log('You selected to do subtraction');
+        break;
+    } else if (userSelectedOperation === '*') {
+        console.log('You selected to do multiplication');
+        break;
+    } else if (userSelectedOperation === '/') {
+        console.log('You selected to do division');
+        break;
     } else {
-        console.log(`You selected to ${userSelectedOperation} your numbers`);
+        console.log('You entered an invalid operation. Please try again.');
     }
+}
 
-} while (userSelectedOperation === '+'|| userSelectedOperation === '-' || userSelectedOperation === '*' || userSelectedOperation === '/');
+
+
+
+
+
+
+
 
