@@ -66,3 +66,17 @@ do {
  }
 } while (seasonOfYear != true);
 
+do {
+    selectProduct = prompt('Select product (vegetables or fruits)');
+
+    if (selectProduct.trim().toLowerCase() === 'vegetables') {
+        console.log('You selected vegetables');
+        break;
+    } else if (selectProduct === 'fruit') {
+        console.log('You selected fruit');
+        break;
+    } else {
+        console.log('Please select product')
+    }
+} while (selectProduct != true);
+
