@@ -69,7 +69,7 @@ do {
 do {
     selectCategory = prompt('Select product (vegetables or fruits)');
 
-    if (selectCategory.trim().toLowerCase() === 'vegetables') {
+    if (selectCategory.trim().toLowerCase() === 'vegetable') {
         console.log('You selected vegetables');
         break;
     } else if (selectCategory === 'fruit') {
@@ -80,7 +80,7 @@ do {
     }
 } while (selectCategory != true);
 
-if (selectCategory === 'vegetables') {
+if (selectCategory === 'vegetable') {
     selectProduct = prompt('Please selecet vegetable (cabbage, avocado, tomato)');
 } else if (selectCategory === 'fruit') {
     selectProduct = prompt('Plese select fruit (grapes, raspberry, coconut)');
@@ -88,3 +88,38 @@ if (selectCategory === 'vegetables') {
     alert('Something went wrong!');
 }
 
+winter = 2;
+summer = 0.8;
+
+countOfProduct = prompt('Please enter count of product');
+
+if (selectProduct === 'cabbage') {
+    document.write(`<div class="product" align="center">
+     <img src="images/vegetables/cabbage.svg" alt="cabbage" width="100" height="100">
+    <p>Selected product: <b>cabbage</b></p>
+    <p>Count of cabbages: <b>3</b></p>
+    <p>Selected period: <b>winter</b></p>
+    <p>Selected category: <b>vegetables</b></p>
+    <p>Final sum: <b>48 UAH</b></p>
+    </div>`);
+} else if (selectProduct === 'avocado') {
+    document.write(`<div class="product" align="center">
+     <img src="images/vegetables/cabbage.svg" alt="cabbage" width="100" height="100">
+    <p>Selected product: <b>cabbage</b></p>
+    <p>Count of cabbages: <b>3</b></p>
+    <p>Selected period: <b>winter</b></p>
+    <p>Selected category: <b>vegetables</b></p>
+    <p>Final sum: <b>48 UAH</b></p>
+    </div>`);
+} else if (selectProduct === 'tomato') {
+    document.write(`<div class="product" align="center">
+     <img src="images/vegetables/cabbage.svg" alt="cabbage" width="100" height="100">
+    <p>Selected product: <b>cabbage</b></p>
+    <p>Count of cabbages: <b>3</b></p>
+    <p>Selected period: <b>winter</b></p>
+    <p>Selected category: <b>vegetables</b></p>
+    <p>Final sum: <b>48 UAH</b></p>
+    </div>`);
+} else {
+    alert('Your basket is empty');
+}
