@@ -57,9 +57,11 @@ do {
 
  if (seasonOfYear.trim().toLowerCase() === 'winter') {
     console.log('You selected winter');
+    winter = 2;
     break;
  } else if (seasonOfYear === 'summer') {
     console.log('You selected summer');
+    summer = 0.8;
     break;
  } else {
     console.log('Please enter your season');
@@ -88,37 +90,45 @@ if (selectCategory === 'vegetable') {
     alert('Something went wrong!');
 }
 
-winter = 2;
-summer = 0.8;
+
+
 
 countOfProduct = prompt('Please enter count of product');
 
+stratPriceOfCab = 24;
+startPriceOfAvoc = 70;
+startPriceOfTomato = 17;
+
+startPriceOfGrapes = 72;
+startPriceOfRasb = 60;
+startPriceOfCoco = 27;
+
 if (selectProduct === 'cabbage') {
     document.write(`<div class="product" align="center">
-     <img src="images/vegetables/cabbage.svg" alt="cabbage" width="100" height="100">
+     <img src="../images/cabbage.svg" alt="cabbage" width="100" height="100">
     <p>Selected product: <b>cabbage</b></p>
-    <p>Count of cabbages: <b>3</b></p>
-    <p>Selected period: <b>winter</b></p>
-    <p>Selected category: <b>vegetables</b></p>
-    <p>Final sum: <b>48 UAH</b></p>
+    <p>Count of cabbages: <b>${countOfProduct}</b></p>
+    <p>Selected period: <b>${seasonOfYear}</b></p>
+    <p>Selected category: <b>${selectCategory}</b></p>
+    <p>Final sum: <b> UAH</b></p>
     </div>`);
 } else if (selectProduct === 'avocado') {
     document.write(`<div class="product" align="center">
-     <img src="images/vegetables/cabbage.svg" alt="cabbage" width="100" height="100">
-    <p>Selected product: <b>cabbage</b></p>
-    <p>Count of cabbages: <b>3</b></p>
-    <p>Selected period: <b>winter</b></p>
-    <p>Selected category: <b>vegetables</b></p>
-    <p>Final sum: <b>48 UAH</b></p>
+     <img src="../images/vegetables/avocado.svg" alt="avocado" width="100" height="100">
+    <p>Selected product: <b>avocado</b></p>
+    <p>Count of cabbages: <b>${countOfProduct}</b></p>
+    <p>Selected period: <b>${seasonOfYear}</b></p>
+    <p>Selected category: <b>${selectCategory}</b></p>
+    <p>Final sum: <b> UAH</b></p>
     </div>`);
 } else if (selectProduct === 'tomato') {
     document.write(`<div class="product" align="center">
-     <img src="images/vegetables/cabbage.svg" alt="cabbage" width="100" height="100">
-    <p>Selected product: <b>cabbage</b></p>
-    <p>Count of cabbages: <b>3</b></p>
-    <p>Selected period: <b>winter</b></p>
-    <p>Selected category: <b>vegetables</b></p>
-    <p>Final sum: <b>48 UAH</b></p>
+     <img src="../images/tomato.svg" alt="tomato" width="100" height="100">
+    <p>Selected product: <b>tomato</b></p>
+    <p>Count of cabbages: <b>${countOfProduct}</b></p>
+    <p>Selected period: <b>${seasonOfYear}</b></p>
+    <p>Selected category: <b>${selectCategory}</b></p>
+    <p>Final sum: <b> ${startPriceOfTomato * parseInt(seasonOfYear) * parseInt(countOfProduct)}UAH</b></p>
     </div>`);
 } else {
     alert('Your basket is empty');
