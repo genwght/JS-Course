@@ -67,16 +67,24 @@ do {
 } while (seasonOfYear != true);
 
 do {
-    selectProduct = prompt('Select product (vegetables or fruits)');
+    selectCategory = prompt('Select product (vegetables or fruits)');
 
-    if (selectProduct.trim().toLowerCase() === 'vegetables') {
+    if (selectCategory.trim().toLowerCase() === 'vegetables') {
         console.log('You selected vegetables');
         break;
-    } else if (selectProduct === 'fruit') {
+    } else if (selectCategory === 'fruit') {
         console.log('You selected fruit');
         break;
     } else {
         console.log('Please select product')
     }
-} while (selectProduct != true);
+} while (selectCategory != true);
+
+if (selectCategory === 'vegetables') {
+    selectProduct = prompt('Please selecet vegetable (cabbage, avocado, tomato)');
+} else if (selectCategory === 'fruit') {
+    selectProduct = prompt('Plese select fruit (grapes, raspberry, coconut)');
+} else {
+    alert('Something went wrong!');
+}
 
