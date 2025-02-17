@@ -52,12 +52,15 @@
 // ✔️ A successfully completed assignment is an approved PR.
 
 
-seasonOfYear = prompt('Please select season of year. (Winter or Summer)');
+do {
+    seasonOfYear = prompt('Please select season of year. (Winter or Summer)');
 
-if (seasonOfYear.toLowerCase().trim() === 'winter') {
+ if (seasonOfYear === 'winter') {
     console.log('You selected winter');
-} else if (seasonOfYear === 'summer') {
+ } else if (seasonOfYear === 'summer') {
     console.log('You selected summer');
-} else {
+ } else {
     console.log('Please enter your season');
+ }
+ 
 } while (seasonOfYear === 'winter' || seasonOfYear === 'summer');
