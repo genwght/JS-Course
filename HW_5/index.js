@@ -55,12 +55,14 @@
 do {
     seasonOfYear = prompt('Please select season of year. (Winter or Summer)');
 
- if (seasonOfYear === 'winter') {
+ if (seasonOfYear.trim().toLowerCase() === 'winter') {
     console.log('You selected winter');
+    break;
  } else if (seasonOfYear === 'summer') {
     console.log('You selected summer');
+    break;
  } else {
     console.log('Please enter your season');
  }
- 
-} while (seasonOfYear === 'winter' || seasonOfYear === 'summer');
+} while (seasonOfYear != true);
+
