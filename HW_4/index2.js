@@ -45,21 +45,14 @@ do {
 
 do {
     countOperation = parseInt(prompt('Please enter count of operation from 2 to 6'));
-     if (!isNaN(countOperation) && countOperation >= 2 && countOperation <= 6) {
-        break;
-     } else {
-        console.log('Enter valid number')
-     }
+} while (!isNaN(countOperation) && countOperation >= 2 && countOperation <= 6);
 
-} while (true);
-
-for (i = 0; i < countOperation; i++) {
-    userNumber = parseFloat(prompt(`Please enter number ${i + 1}:`));
+do (i = 0; i < countOperation; i++) {
+    userNumber = parseInt(prompt(`Please enter number ${i + 1}:`));
 } while (isNaN(userNumber));
 
-userResult = [i++]
 
-for (i = 1; i < parseInt(userNumber); i++) {
+for (i = 1; i < parseInt(countOperation); i++) {
     
     if (userSelectedOperation === '+') {
         userResult +=  parseInt(userNumber[i]);
