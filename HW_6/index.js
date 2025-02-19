@@ -46,7 +46,15 @@ sports = [
     ];
 
 
-    winterSports = sports.slise(0, 5);
-    summerSports = sports.splise(5);
+    winterSports = sports.slice(0, 5);
+    summerSports = sports.slice(5);
 
-    console.log(`Winter sports: ${winterSports}`);
+    fruicts = winterSports.splice(2, 1).concat(summerSports.splice(2, 2));
+   
+
+    console.log('Winter sports:', winterSports);
+    console.log('Summer sports:', summerSports);
+    console.log(fruicts)
+
+    
+    
