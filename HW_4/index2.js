@@ -21,47 +21,32 @@
 // ✔️ Use conditional statements to ensure correct values.
 // ✔️ Display the final result of the calculation.
 
+operation = ['+', '-', '*', '/'];
+
 do {
     userSelectedOperation = prompt('Please enter opreation would you like to do');
+} while (!operation.includes(userSelectedOperation));
 
-    if (userSelectedOperation === '+') {
-        console.log('You select to do addition');
-        break;
-    } else if (userSelectedOperation === '-') {
-        console.log('You select to do subtraction');
-        break; 
-    } else if (userSelectedOperation === '*') {
-        console.log('You select to do multiplication');
-        break; 
-    } else if (userSelectedOperation === '/') {
-        console.log('You select to do division');
-        break; 
-    } else {
-        console.log('You enter invalid opration');
-    }
-
-} while (true);
+debugger;
+do {
+    countOperation = parseInt(prompt('Please enter count of operation from 2 to 6'));
+} while (isNaN(countOperation) && countOperation >= 2 && countOperation <= 6);
 
 
 do {
-    countOperation = parseInt(prompt('Please enter count of operation from 2 to 6'));
-} while (!isNaN(countOperation) && countOperation >= 2 && countOperation <= 6);
-
-do (i = 0; i < countOperation; i++) {
-    userNumber = parseInt(prompt(`Please enter number ${i + 1}:`));
+    userNumber = parseInt(prompt(`Please enter number${countOperation}:`));
 } while (isNaN(userNumber));
-
 
 for (i = 1; i < parseInt(countOperation); i++) {
     
     if (userSelectedOperation === '+') {
-        userResult +=  parseInt(userNumber[i]);
+        userResult +=  parseInt(userNumber);
     } else if (userSelectedOperation === '-') {
-        userResult -= parseInt(userNumber[i]);
+        userResult -= parseInt(userNumber);
     } else if (userSelectedOperation === '*') {
-        userResult *= parseInt(userNumber[i]);
+        userResult *= parseInt(userNumber);
     } else if (userSelectedOperation === '/') {
-        userResult /= parseInt(userNumber[i]);
+        userResult /= parseInt(userNumber);
     }
     
 }
