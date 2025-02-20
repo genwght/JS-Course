@@ -21,36 +21,42 @@
 // ✔️ Use conditional statements to ensure correct values.
 // ✔️ Display the final result of the calculation.
 
+
+
 operation = ['+', '-', '*', '/'];
 
 do {
-    userSelectedOperation = prompt('Please enter opreation would you like to do');
+    userSelectedOperation = prompt('Please enter operation you would like to do (+, -, *, /)');
 } while (!operation.includes(userSelectedOperation));
 
-debugger;
 do {
-    countOperation = parseInt(prompt('Please enter count of operation from 2 to 6'));
-} while (isNaN(countOperation) && countOperation >= 2 && countOperation <= 6);
-
+    countOperation = parseInt(prompt('Please enter count of operations from 2 to 6'));
+} while (isNaN(countOperation) || countOperation < 2 || countOperation > 6);
 
 do {
-    userNumber = parseInt(prompt(`Please enter number${countOperation}:`));
-} while (isNaN(userNumber));
+    userResult = parseInt(prompt('Please enter number 1:'));
+} while (isNaN(userResult));
 
-for (i = 1; i < parseInt(countOperation); i++) {
-    
+for (i = 1; i < countOperation; i++) {
+    do {
+        userNumber = parseInt(prompt(`Please enter number ${i + 1}:`));
+    } while (isNaN(userNumber));
+
     if (userSelectedOperation === '+') {
-        userResult +=  parseInt(userNumber);
+        userResult += userNumber;
     } else if (userSelectedOperation === '-') {
-        userResult -= parseInt(userNumber);
+        userResult -= userNumber;
     } else if (userSelectedOperation === '*') {
-        userResult *= parseInt(userNumber);
+        userResult *= userNumber;
     } else if (userSelectedOperation === '/') {
-        userResult /= parseInt(userNumber);
+        if (userNumber !== 0) {
+            userResult /= userNumber;
+        } else {
+            alert('Division by zero is not allowed. Please enter another number.');
+            i--; // Повторити введення числа
+        }
     }
-    
 }
 
-
 console.log(userResult);
-alert(userResult);
+alert('Result: ' + userResult);
