@@ -53,7 +53,7 @@ for (i = 1; i < countOperation; i++) {
             userResult /= userNumber;
         } else {
             alert('Division by zero is not allowed. Please enter another number.');
-            i--; // Повторити введення числа
+            i--; 
         }
     }
 }
