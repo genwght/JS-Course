@@ -58,19 +58,11 @@ do{
     selectedSeason = prompt('Please select season (winter or summer)');
 } while (!selectedSeason || season.include(selectedSeason))
 
-do {
-    selectCategory = prompt('Select product (vegetables or fruits)');
+product = ['vegetable', 'fruit'];
 
-    if (selectCategory.trim().toLowerCase() === 'vegetable') {
-        console.log('You selected vegetables');
-        break;
-    } else if (selectCategory === 'fruit') {
-        console.log('You selected fruit');
-        break;
-    } else {
-        console.log('Please select product')
-    }
-} while (selectCategory != true);
+do {
+    selectedProduct = prompt('Please select product (vegetable or fruit)')
+} while (!selectProduct || product.include(selectProduct));
 
 if (selectCategory === 'vegetable') {
     selectProduct = prompt('Please selecet vegetable (cabbage, avocado, tomato)');
