@@ -56,13 +56,13 @@ season = ['winter', 'summer'];
 
 do{
     selectedSeason = prompt('Please select season (winter or summer)');
-} while (!selectedSeason || season.include(selectedSeason))
+} while (!selectedSeason || !season.include(selectedSeason))
 
 product = ['vegetable', 'fruit'];
 
 do {
     selectedProduct = prompt('Please select product (vegetable or fruit)')
-} while (!selectProduct || product.include(selectProduct));
+} while (!selectProduct || !product.include(selectProduct));
 
 if (selectCategory === 'vegetable') {
     selectProduct = prompt('Please selecet vegetable (cabbage, avocado, tomato)');
