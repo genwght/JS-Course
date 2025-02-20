@@ -62,7 +62,7 @@ product = ['vegetable', 'fruit'];
 
 do {
     selectedProduct = prompt('Please select product (vegetable or fruit)')
-} while (!selectProduct || !product.includes(selectProduct));
+} while (!selectedProduct || !product.includes(selectedProduct));
 
 if (selectCategory === 'vegetable') {
     selectProduct = prompt('Please selecet vegetable (cabbage, avocado, tomato)');
