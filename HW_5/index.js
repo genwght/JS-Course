@@ -64,18 +64,12 @@ do {
     selectedProduct = prompt('Please select product (vegetable or fruit)')
 } while (!selectedProduct || !product.includes(selectedProduct));
 
-if (selectCategory === 'vegetable') {
-    selectProduct = prompt('Please selecet vegetable (cabbage, avocado, tomato)');
-} else if (selectCategory === 'fruit') {
-    selectProduct = prompt('Plese select fruit (grapes, raspberry, coconut)');
-} else {
-    alert('Something went wrong!');
-}
-
-
-
-
 countOfProduct = prompt('Please enter count of product');
+
+
+
+
+
 
 stratPriceOfCab = 24;
 startPriceOfAvoc = 70;
