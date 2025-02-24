@@ -84,7 +84,7 @@ document.write(
 `
 <div class="product" align="center">
 <img src="../images/${selectedCategory}/${selectedProducts}.svg" alt="${selectedProducts}" width="100" height="100">
-<p>Selected product: <b>cabbage</b></p>
+<p>Selected product: <b>${selectedProducts}</b></p>
 <p>Count of ${selectedProducts}: <b>${countOfProduct}</b></p>
 <p>Selected period: <b>${selectedSeason}</b></p>
 <p>Selected category: <b>${selectedCategory}</b></p>
