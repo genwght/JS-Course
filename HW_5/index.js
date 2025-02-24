@@ -53,6 +53,9 @@
 
 
 season = ['winter', 'summer'];
+category = ['vegetable', 'fruit'];
+vegetables = ['cabbage', 'avocado', 'tomato'];
+fruit = ['grapes', 'raspberry', 'coconut'];
 
 do{
     selectedSeason = prompt('Please select season (winter or summer)');
@@ -60,25 +63,32 @@ do{
 
 coefficient = selectedSeason === 'winter' ? 2 : 0.8;
 
-category = ['vegetable', 'fruit'];
 
 do {
-    selectedCategory = prompt('Please select product (vegetable or fruit)')
-} while (!selectedCategory || !product.includes(selectedCategory.toLowerCase().trim()));
+    selectedCategory = prompt('Please select category (vegetable or fruit)')
+} while (!selectedCategory || !category.includes(selectedCategory.toLowerCase().trim()));
+
+productToChoose = selectedCategory === 'vegetable' ? vegetables : fruit;
+
+do{
+    selectedProducts = prompt(`Plese enter product: ${productToChoose.join(' or ')}`)
+} while (!selectedProducts || !productToChoose.includes(selectedProducts.toLowerCase().trim()));
+console.log(selectedProducts);
+
 
 countOfProduct = prompt('Please enter count of product');
 
 
 
-    document.write(
-    `
-    <div class="product" align="center">
-    <img src="../images/cabbage.svg" alt="cabbage" width="100" height="100">
-    <p>Selected product: <b>cabbage</b></p>
-    <p>Count of cabbages: <b>${countOfProduct}</b></p>
-    <p>Selected period: <b>${selectedSeason}</b></p>
-    <p>Selected category: <b>${selectCategory}</b></p>
-    <p>Final sum: <b> UAH</b></p>
-    </div>
-    `
+document.write(
+`
+<div class="product" align="center">
+<img src="../images/${selectedCategory}/${selectedProducts}.svg" alt="${selectedProducts}" width="100" height="100">
+<p>Selected product: <b>cabbage</b></p>
+<p>Count of ${selectedProducts}: <b>${countOfProduct}</b></p>
+<p>Selected period: <b>${selectedSeason}</b></p>
+<p>Selected category: <b>${selectedCategory}</b></p>
+<p>Final sum: <b> UAH</b></p>
+</div>
+`
 );
