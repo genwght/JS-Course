@@ -58,6 +58,8 @@ do{
     selectedSeason = prompt('Please select season (winter or summer)');
 } while (!selectedSeason || !season.includes(selectedSeason.toLowerCase().trim()))
 
+coefficient = selectedSeason === 'winter' ? 2 : 0.8;
+
 product = ['vegetable', 'fruit'];
 
 do {
