@@ -65,18 +65,20 @@ coefficient = selectedSeason === 'winter' ? 2 : 0.8;
 
 
 do {
-    selectedCategory = prompt('Please select category (vegetable or fruit)')
+    selectedCategory = prompt('Please select category (vegetable or fruit)');
 } while (!selectedCategory || !category.includes(selectedCategory.toLowerCase().trim()));
 
 productToChoose = selectedCategory === 'vegetable' ? vegetables : fruit;
 
 do{
-    selectedProducts = prompt(`Plese enter product: ${productToChoose.join(' or ')}`)
+    selectedProducts = prompt(`Plese enter product: ${productToChoose.join(' or ')}`);
 } while (!selectedProducts || !productToChoose.includes(selectedProducts.toLowerCase().trim()));
 console.log(selectedProducts);
 
+do {
+    countOfProduct = prompt('Please enter count of product');
+} while (!countOfProduct || countOfProduct <1);
 
-countOfProduct = prompt('Please enter count of product');
 
 
 
