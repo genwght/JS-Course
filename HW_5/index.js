@@ -56,13 +56,13 @@ season = ['winter', 'summer'];
 
 do{
     selectedSeason = prompt('Please select season (winter or summer)');
-} while (!selectedSeason || !season.includes(selectedSeason))
+} while (!selectedSeason || !season.includes(selectedSeason.toLowerCase().trim()))
 
 product = ['vegetable', 'fruit'];
 
 do {
     selectedProduct = prompt('Please select product (vegetable or fruit)')
-} while (!selectedProduct || !product.includes(selectedProduct));
+} while (!selectedProduct || !product.includes(selectedProduct.toLowerCase().trim()));
 
 countOfProduct = prompt('Please enter count of product');
 
