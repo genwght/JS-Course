@@ -23,7 +23,9 @@
 // ✔️ A successfully completed assignment is an approved PR.
 
 // Good luck! 🚀
+
 // 1️⃣ Calculate the total sum and count of all positive numbers in the array.
+
 numbers = [12, -45, 67, -3, 89, -90, 23, 5, -22, 56, 43, -78, 91, -10, 38, 62, -41, 7, -99, 34, 55, -60, 14, 80];
 sum = 0;
 count = 0;
@@ -41,6 +43,7 @@ for (j = 0; j < numbers.length; j++) {
     }
 }
 console.log(count);
+
 // 2️⃣ Find the smallest value in the array and determine its index position.
 
 let minNum = Infinity;
@@ -66,3 +69,12 @@ console.log(maxNum);
 console.log(index);
 
 // 4️⃣ Count how many negative numbers exist in the array.
+
+let countOfNegative = 0;
+for (i = 0; i < numbers.length; i++) 
+    if (numbers[i] < 0) {
+        countOfNegative = countOfNegative + 1;
+}
+console.log(countOfNegative);
+
+
