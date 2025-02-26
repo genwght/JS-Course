@@ -1,27 +1,6 @@
-// Work with a given array and perform various operations using loops and array methods.
 
 // 📌 Given array:
 // numbers = [12, -45, 67, -3, 89, -90, 23, 5, -22, 56, 43, -78, 91, -10, 38, 62, -41, 7, -99, 34, 55, -60, 14, 80];
-
-// 📌 What to do?
-
-
-
-
-
-
-
-
-
-
-// 📌 Requirements:
-// ✔️ Use loops to solve each task.
-// ✔️ Ensure the program handles any array of numbers.
-// ✔️ Display all results using console.log() or document.write().
-// ✔️ Submit your work as a pull request (PR) on GitHub.
-// ✔️ A successfully completed assignment is an approved PR.
-
-// Good luck! 🚀
 
 // 1️⃣ Calculate the total sum and count of all positive numbers in the array.
 
