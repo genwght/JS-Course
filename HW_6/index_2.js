@@ -42,10 +42,14 @@ for (j = 0; j < numbers.length; j++) {
 }
 console.log(count);
 // 2️⃣ Find the smallest value in the array and determine its index position.
-debugger;
+
 let minNum = Infinity;
+let minIndex = 1;
 for (i = 0; i < numbers.length; i++) 
     if (numbers[i] < minNum) { 
         minNum = numbers[i]; 
+        minIndex = i + 1;
 }
 console.log(minNum)
+console.log(minIndex);
+
