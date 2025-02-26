@@ -8,8 +8,8 @@
 
 
 
-// 5️⃣ Count the number of odd positive numbers in the array.
-// 6️⃣ Count the number of even positive numbers in the array.
+
+
 // 7️⃣ Find the sum of all even positive numbers.
 // 8️⃣ Find the sum of all odd positive numbers.
 // 9️⃣ Multiply all positive numbers together and display the result.
@@ -77,4 +77,20 @@ for (i = 0; i < numbers.length; i++)
 }
 console.log(countOfNegative);
 
+// 5️⃣ Count the number of odd positive numbers in the array.
 
+let countOfOddPositive = 0;
+for (i = 0; i < numbers.length; i++) 
+    if (numbers[i] % 2 !== 0) {
+        countOfOddPositive = countOfOddPositive + 1;
+    }
+console.log(countOfOddPositive);
+
+// 6️⃣ Count the number of even positive numbers in the array.
+
+let countOfEvenNum = 0;
+for (i = 0; i < numbers.length; i++)
+    if (numbers[i] % 2 === 0){
+        countOfEvenNum = countOfEvenNum +1;
+    }
+console.log(countOfEvenNum);
