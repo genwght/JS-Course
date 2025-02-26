@@ -4,8 +4,8 @@
 // numbers = [12, -45, 67, -3, 89, -90, 23, 5, -22, 56, 43, -78, 91, -10, 38, 62, -41, 7, -99, 34, 55, -60, 14, 80];
 
 // 📌 What to do?
-// 1️⃣ Calculate the total sum and count of all positive numbers in the array.
-// 2️⃣ Find the smallest value in the array and determine its index position.
+
+
 // 3️⃣ Find the largest value in the array and determine its index position.
 // 4️⃣ Count how many negative numbers exist in the array.
 // 5️⃣ Count the number of odd positive numbers in the array.
@@ -23,7 +23,7 @@
 // ✔️ A successfully completed assignment is an approved PR.
 
 // Good luck! 🚀
-
+// 1️⃣ Calculate the total sum and count of all positive numbers in the array.
 numbers = [12, -45, 67, -3, 89, -90, 23, 5, -22, 56, 43, -78, 91, -10, 38, 62, -41, 7, -99, 34, 55, -60, 14, 80];
 sum = 0;
 count = 0;
@@ -41,3 +41,11 @@ for (j = 0; j < numbers.length; j++) {
     }
 }
 console.log(count);
+// 2️⃣ Find the smallest value in the array and determine its index position.
+debugger;
+let minNum = Infinity;
+for (i = 0; i < numbers.length; i++) 
+    if (numbers[i] < minNum) { 
+        minNum = numbers[i]; 
+}
+console.log(minNum)
