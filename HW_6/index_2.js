@@ -12,7 +12,7 @@
 
 
 
-// 9️⃣ Multiply all positive numbers together and display the result.
+
 // 🔟 Replace all numbers in the array with 0, except for the highest number.
 
 // 📌 Requirements:
@@ -112,3 +112,12 @@ for (i = 0; i < numbers.length; i++)
         sumOfOdd = sumOfOdd + numbers[i];
     }
 console.log(sumOfOdd);
+
+// 9️⃣ Multiply all positive numbers together and display the result.
+
+let positiveMultipling = 1;
+for (i =0; i < numbers.length; i++)
+    if (numbers[i] > 0) {
+        positiveMultipling = positiveMultipling * numbers[i];
+    }
+console.log(positiveMultipling);
