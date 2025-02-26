@@ -10,8 +10,8 @@
 
 
 
-// 7️⃣ Find the sum of all even positive numbers.
-// 8️⃣ Find the sum of all odd positive numbers.
+
+
 // 9️⃣ Multiply all positive numbers together and display the result.
 // 🔟 Replace all numbers in the array with 0, except for the highest number.
 
@@ -94,3 +94,21 @@ for (i = 0; i < numbers.length; i++)
         countOfEvenNum = countOfEvenNum +1;
     }
 console.log(countOfEvenNum);
+
+// 7️⃣ Find the sum of all even positive numbers.
+
+let sumOfEven = 0;
+for (i = 0; i < numbers.length; i++)
+    if (numbers[i] % 2 === 0) {
+        sumOfEven = sumOfEven + numbers[i];
+    }
+console.log(sumOfEven);
+
+// 8️⃣ Find the sum of all odd positive numbers.
+
+let sumOfOdd = 0;
+for (i = 0; i < numbers.length; i++)
+    if (numbers[i] % 2 !== 0) {
+        sumOfOdd = sumOfOdd + numbers[i];
+    }
+console.log(sumOfOdd);
