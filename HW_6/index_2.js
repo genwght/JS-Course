@@ -6,8 +6,8 @@
 // 📌 What to do?
 
 
-// 3️⃣ Find the largest value in the array and determine its index position.
-// 4️⃣ Count how many negative numbers exist in the array.
+
+
 // 5️⃣ Count the number of odd positive numbers in the array.
 // 6️⃣ Count the number of even positive numbers in the array.
 // 7️⃣ Find the sum of all even positive numbers.
@@ -53,3 +53,16 @@ for (i = 0; i < numbers.length; i++)
 console.log(minNum)
 console.log(minIndex);
 
+// 3️⃣ Find the largest value in the array and determine its index position.
+
+let maxNum = 0;
+let index = 1;
+for (i = 0; i < numbers.length; i++) 
+    if (numbers[i] > maxNum) { 
+        maxNum = numbers[i]; 
+        index = i + 1;
+}
+console.log(maxNum);
+console.log(index);
+
+// 4️⃣ Count how many negative numbers exist in the array.
