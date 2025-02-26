@@ -13,7 +13,6 @@
 
 
 
-// 🔟 Replace all numbers in the array with 0, except for the highest number.
 
 // 📌 Requirements:
 // ✔️ Use loops to solve each task.
@@ -121,3 +120,18 @@ for (i =0; i < numbers.length; i++)
         positiveMultipling = positiveMultipling * numbers[i];
     }
 console.log(positiveMultipling);
+
+// 🔟 Replace all numbers in the array with 0, except for the highest number.
+
+let maxValue = 0;
+for (i = 0; i < numbers.length; i++) 
+    if (numbers[i] > maxValue) { 
+        maxValue = numbers[i]; 
+}
+console.log(maxValue);
+
+for (j = 0; j < numbers.length; j++)
+    if (maxValue > numbers[j]) {
+        numbers[j] = 0;
+    }
+console.log(numbers.join(', '));
