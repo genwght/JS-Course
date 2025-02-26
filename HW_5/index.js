@@ -56,6 +56,8 @@ season = ['winter', 'summer'];
 category = ['vegetable', 'fruit'];
 vegetables = ['cabbage', 'avocado', 'tomato'];
 fruit = ['grapes', 'raspberry', 'coconut'];
+priceOfVegetable = [11, 23, 14];
+priceOfFruit = [21, 34, 6];
 
 do{
     selectedSeason = prompt('Please select season (winter or summer)');
@@ -78,8 +80,13 @@ console.log(selectedProducts);
 do {
     countOfProduct = prompt('Please enter count of product');
 } while (!countOfProduct || countOfProduct <1);
+countOfProduct = +countOfProduct;
 
+indexOfProductPrice = productToChoose.indexOf(selectedProducts);
+pricesForProducts = selectedCategory === 'vegetables' ? priceOfVegetable : priceOfFruit;
+priceOfProduct = pricesForProducts[indexOfProductPrice];
 
+totalPrice = priceOfProduct * countOfProduct * coefficient;
 
 
 document.write(
@@ -90,7 +97,7 @@ document.write(
 <p>Count of ${selectedProducts}: <b>${countOfProduct}</b></p>
 <p>Selected period: <b>${selectedSeason}</b></p>
 <p>Selected category: <b>${selectedCategory}</b></p>
-<p>Final sum: <b> UAH</b></p>
+<p>Final sum: ${totalPrice} <b> UAH</b></p>
 </div>
 `
 );
