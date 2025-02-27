@@ -5,7 +5,7 @@
 
 // 📌 What to do?
 
-// 2️⃣ Reverse the order of elements in the rainbow array.
+
 // 3️⃣ Modify the rainbow array by adding or replacing elements to match the final structure:
 // ['Richard', 'Of', 'York', 'Gave', 'Battle', 'In', 'Vain']
 // 4️⃣ Render the final array in HTML so that each word appears in a separate colored box.
@@ -23,5 +23,8 @@
 const hero = ['Ivan'];
 const native = ['York', 'Of'];
 const destination = ['Poltava', 'In'];
-raibow = [hero.concat(native).concat(destination)]
-console.log(raibow);
+rainbow = [hero.concat(native).concat(destination)]
+console.log(rainbow);
+
+// 2️⃣ Reverse the order of elements in the rainbow array.
+
