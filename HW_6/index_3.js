@@ -23,8 +23,9 @@
 const hero = ['Ivan'];
 const native = ['York', 'Of'];
 const destination = ['Poltava', 'In'];
-rainbow = [hero.concat(native).concat(destination)]
+const rainbow = hero.concat(native, destination);
 console.log(rainbow);
 
 // 2️⃣ Reverse the order of elements in the rainbow array.
-
+const rainbowReverse = rainbow.reverse();
+console.log(rainbowReverse);
