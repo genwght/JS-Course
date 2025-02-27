@@ -6,9 +6,9 @@
 // 📌 What to do?
 
 
-// 3️⃣ Modify the rainbow array by adding or replacing elements to match the final structure:
-// ['Richard', 'Of', 'York', 'Gave', 'Battle', 'In', 'Vain']
-// 4️⃣ Render the final array in HTML so that each word appears in a separate colored box.
+
+
+
 // 5️⃣ Use any font you like (for example, Quicksand as in the reference image).
 
 // 📌 Requirements:
@@ -27,5 +27,23 @@ const rainbow = hero.concat(native, destination);
 console.log(rainbow);
 
 // 2️⃣ Reverse the order of elements in the rainbow array.
+
 const rainbowReverse = rainbow.reverse();
 console.log(rainbowReverse);
+
+// 3️⃣ Modify the rainbow array by adding or replacing elements to match the final structure:
+// ['Richard', 'Of', 'York', 'Gave', 'Battle', 'In', 'Vain']
+
+let newHero = ['Ivan'];
+newHero[0] = 'Richard';
+let newNative = ['York', 'Of'].reverse();
+let newDestination = ['Poltava', 'In'];
+newDestination[0] = 'Battle';
+newDestination.unshift('Gave');
+newDestination.push('Vain');
+
+newEditArray = newHero.concat(newNative, newDestination);
+console.log(newEditArray);
+
+// 4️⃣ Render the final array in HTML so that each word appears in a separate colored box.
+
