@@ -5,12 +5,6 @@
 
 // 📌 What to do?
 
-
-
-
-
-
-
 // 📌 Requirements:
 // ✔️ Use loops, if/else, or switch/case where necessary.
 // ✔️ Use array methods such as .push(), .pop(), .unshift(), .shift(), .concat(), .splice(), .reverse(), .join().
