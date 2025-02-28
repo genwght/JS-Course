@@ -47,3 +47,34 @@ console.log(newEditArray);
 
 // 4️⃣ Render the final array in HTML so that each word appears in a separate colored box.
 
+const newRainbow = ['Richard', 'Of', 'York', 'Gave', 'Battle', 'In', 'Vain'];
+const colorOfNewRainbow = ['red', 'orange', 'yellow', 'green', 'lightblue', 'blue', 'purple'];
+console.log(newRainbow.length, colorOfNewRainbow.length);
+
+
+document.write('<div style = "display: flex; aling-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;">');
+
+for (i = 0; i < newRainbow.length; i++) {
+    document.write(`
+        <div style="
+            background-color: ${colorOfNewRainbow[i]};
+            height: 100px;
+            width: 100px;
+            padding: 10px 15px;
+            font-weight: bold;
+            border-radius: 100px;
+            text-aling: center;
+        ">
+           <p style = "
+             display: flex;
+             justify-content: center;
+             color: black;
+             transform: translateY(100px);
+            ">
+           ${newRainbow[i]}
+           </p>
+        </div>
+    `);
+}
+
+document.write('</div>');
