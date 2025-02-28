@@ -25,7 +25,6 @@
 
 // 🚀 Good luck! 😊
 
-
 function removeElement(randomArray, element) {
     const index = randomArray.indexOf(element);
     if (index > -1) {
@@ -33,5 +32,5 @@ function removeElement(randomArray, element) {
     }
 }
 const randomArray = [1, 12, 45, 56, 676, 5432, 31233];
-removeElement(randomArray, 12)
+removeElement(randomArray, 5432)
 console.log(randomArray);
