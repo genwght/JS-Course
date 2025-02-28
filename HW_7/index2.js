@@ -23,3 +23,18 @@
 // ✔️ A successfully completed assignment is an approved PR.
 
 // 🚀 Good luck! 😊
+
+function createSum() {
+    let totalSum = 0;
+
+    return function (number) {
+        totalSum += number
+        return totalSum
+    };
+}
+
+sum = createSum();
+
+console.log(sum(4));
+console.log(sum(31));
+console.log(sum(2));
