@@ -9,7 +9,7 @@
 
 
 
-// 5️⃣ Use any font you like (for example, Quicksand as in the reference image).
+
 
 // 📌 Requirements:
 // ✔️ Use loops, if/else, or switch/case where necessary.
@@ -66,10 +66,11 @@ for (i = 0; i < newRainbow.length; i++) {
             text-aling: center;
         ">
            <p style = "
-             display: flex;
-             justify-content: center;
-             color: black;
-             transform: translateY(100px);
+           display: flex;
+           justify-content: center;
+           color: black;
+           transform: translateY(100px);
+           font-family: Arial;
             ">
            ${newRainbow[i]}
            </p>
@@ -78,3 +79,5 @@ for (i = 0; i < newRainbow.length; i++) {
 }
 
 document.write('</div>');
+
+// 5️⃣ Use any font you like (for example, Quicksand as in the reference image).
