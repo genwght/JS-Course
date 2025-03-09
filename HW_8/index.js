@@ -49,33 +49,90 @@
 
 // 🚀 Good luck! 😊
 
+const amount = 100;
+const monday = [
+   ['Write a tutorial', 180],
+   ['Some web development', 120]
+];
 const tuesday = [
-    ['Keep writing that tutorial', 240],
-    ['Some more web development', 360],
-    ['A whole lot of nothing', 90],
+   ['Keep writing that tutorial', 240],
+   ['Some more web development', 360],
+   ['A whole lot of nothing', 240]
 ];
 
+const tasks = monday.concat(tuesday);
+const tasksList = tasks 
+  .map(function(task) {
+    const minuteInHour = 60;
+    const hours = task[1] / minuteInHour;
+    return [task[0], hours];
+  })
+  .filter(function(task) {
+    return task[1] > 2;
+  })
+  .map(function(task) {   
+    return [task[0], task[1], task[1] * amount];
+  })
+  .map(function(task) {
+    return `
+      <tr>
+        <td>Task name: ${task[0]}</td>
+        <td>Task duration: ${task[1]} hours</td>
+        <td>Task amount: $${task[2]}</td>
+      </tr>
+    `;
+  });
 
- const foundItem = tuesday.find(function(task) {
-   return task[1] > 200;  
- });
- console.log(foundItem); 
+document.write(`
+  <table>
+    ${tasksList.join('')}
+  </table>
+`);
 
- const isEveryItemHaveMoreThenTwoWorkHours = tuesday.every(function(task) {
+const values = [1, 2, 3, 4];
+const foundItem = values.find(function(item) { 
+  return item > 3;
+}); 
+console.log(foundItem);
+
+const filteredArray = values.filter(function(item) {
+  return item > 100;
+});
+console.log(filteredArray);
+
+const tuesdayTasks = [
+  ['Keep writing that tutorial', 240],
+  ['Some more web development', 360],
+  ['A whole lot of nothing', 90]
+];
+
+const foundTask = tuesdayTasks.find(function(task) {
+  return task[1] > 200;  
+});
+console.log(foundTask);
+
+const foundTaskIndex = tuesdayTasks.findIndex(function(task) {
+  return task[1] > 300;  
+});
+console.log(foundTaskIndex);
+
+const isEveryTaskMoreThanTwoHours = tuesdayTasks.every(function(task) {
   return task[1] > 200;
- }); 
+});
+console.log(isEveryTaskMoreThanTwoHours);
 
- const isSomeItemHaveMoreThenTwoWorkHours = tuesday.some(function(task) {
-   return task[1] > 200;
- }); 
+const isSomeTaskMoreThanTwoHours = tuesdayTasks.some(function(task) {
+  return task[1] > 200;
+});
+console.log(isSomeTaskMoreThanTwoHours);
 
- console.log(isSomeItemHaveMoreThenTwoWorkHours);
+let totalDuration = 0;
+tuesdayTasks.forEach(function(task) {
+  totalDuration += task[1];
+});
+console.log(totalDuration);
 
- let sum = 0;
-
- tuesday.forEach(function(task) {
-   sum += task[1];
- });
-
- console.log(sum);
-
+const totalSum = tuesdayTasks.reduce(function(accumulator, item) {
+  return accumulator + item[1];
+}, 0);
+console.log(totalSum);
