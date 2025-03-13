@@ -60,10 +60,18 @@ const users = [
     }
   ];
 
-debugger
+
 const correctBalance = users
   .filter(user => { 
     return parseFloat(user.balance.replace('$', '').replace(',', '')) > 2000})
   .map(user => user.phone)
-
 console.log(correctBalance);
+
+let totalBalance = 0;
+
+users.forEach(user => {
+    let balance = parseFloat(user.balance.replace('$', '').replace(',', ''));
+    totalBalance += balance;
+});
+
+console.log(totalBalance);
