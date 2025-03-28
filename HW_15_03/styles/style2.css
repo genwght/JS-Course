@@ -1,0 +1,19 @@
+.button {
+    background-color: green;
+    height: 150px;
+    width: 300px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.counterText {
+    height: 150px;
+    width: 300px;
+    font-size: 50px;
+    background-color: red;
+    color: 000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
