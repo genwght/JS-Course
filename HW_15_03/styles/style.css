@@ -1,0 +1,33 @@
+.start {
+    background-color: green;
+    height: 150px;
+    width: 300px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    float: inline-start;
+}
+
+.stop {
+    background-color: red;
+    height: 150px;
+    width: 300px;
+    font-size: 50px;
+    text-align: center;
+    float: inline-start;
+    float: inline-end;
+}
+
+.desktop-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
