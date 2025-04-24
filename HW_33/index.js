@@ -51,12 +51,27 @@ let bankData = {
     'GBP': { max: 10000, min: 100, img: '💷' }
 };
 
+function startATM() {
+    getMoney(userData, bankData)
+        .then(result => {
+            console.log('Operation successful', result);
+        })
+        .catch(error => {
+            console.log('Error occurred:', error);
+        });
+}
+
 function getMoney(userData, bankData) {
     return new Promise((resolve, reject) => {
+        let currency;
+        let amount;
         let answer = confirm('View card balance?');
-        
+        if (!answer) {
+            alert('Operation canceled');
+            return;
+        }
+    
         if (answer) {
-            // Balance check
             let currency;
             do {
                 currency = prompt('Please enter currency (USD, EUR, UAH, BIF, AOA):').toUpperCase();
@@ -64,12 +79,10 @@ function getMoney(userData, bankData) {
 
             console.log(`Balance is: ${userData[currency]} ${currency}`);
             alert(`Balance is: ${userData[currency]} ${currency}`);
-            resolve(userData); // Resolve after checking balance
+            resolve(userData); 
 
         } else {
-            // Withdraw money
-            let currency;
-            let amount;
+            
             do {
                 currency = prompt('Enter currency to withdraw (USD, EUR, UAH, GBP):').toUpperCase();
             } while (!(currency in userData) || !(currency in bankData) || bankData[currency].max <= 0);
@@ -82,7 +95,7 @@ function getMoney(userData, bankData) {
             if (amount <= userData[currency]) {
                 console.log(`Here are your cash ${amount} ${currency} ${bankData[currency].img}`);
                 alert(`Here are your cash ${amount} ${currency} ${bankData[currency].img}`);
-                userData[currency] -= amount; // Deduct amount from user balance
+                userData[currency] -= amount; 
                 resolve(userData);
             } else {
                 console.log('Insufficient balance.');
@@ -91,20 +104,7 @@ function getMoney(userData, bankData) {
             }
         }
 
-        // Final message
+    
         alert('Thank you, have a nice day 😊');
     });
 }
-
-function startATM() {
-    getMoney(userData, bankData)
-        .then(result => {
-            console.log('Operation successful', result);
-        })
-        .catch(error => {
-            console.log('Error occurred:', error);
-        });
-}
-
-console.log('dsadas')
-console.log(getMoney)
